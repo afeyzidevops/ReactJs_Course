@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Minute DevOps</title>
+    <style>
+        a {
+            color: blue; /* Default link color */
+            text-decoration: none; /* Remove underline */
+        }
+        a:hover {
+            color: red; /* Color when hovered */
+        }        
+    </style>
+</head>
+<body>
+    تغییر رنگ پسز زمینه :<input type="color" id="colorPicker"><br>
+    تغییر اندازه فونت :<input type="number" id="fontSizePicker" min="10" max="100" value="16"><br>
+    <div id="colorDiv" style="background-color:rgb(62, 38, 66); color:white;">
+    <h1>6 Minute DevOps</h1>
+    <div>
+    <h2>مطالب جالب و بروز و مباحث یادگیری دوآپس</h2>
+    </div>
+    <div style="background-color: white;">
+        <a href="https://www.google.com/">خانه</a><br>
+        <a href="https://github.com/afeyzidevops">در باره من</a><br>
+        <a href="https://www.linkedin.com/in/ali-feizi-80a19b213/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BRbWspf2R7eJWyX4lH1Evw%3D%3D">تماس با من</a>
+                </div>
+        <img style="display: block; margin: 0 auto; max-width: 600px; max-heiht: 450px" src="https://github.com/afeyzidevops/ReactJs_Course/blob/main/course/DevOps.jpg?raw=true" />
+        <p>DevOps is a set of practices, tools, and philosophies aimed at integrating and automating the work of software development (Dev) and IT operations (Ops) teams. It emphasizes collaboration, continuous integration and delivery (CI/CD), and the use of automation to streamline processes, reduce development cycles, and improve product quality. By breaking down traditional silos, DevOps fosters a culture of shared responsibility, enabling teams to respond quickly to changes, deliver features faster, and ensure greater reliability in software systems. It often involves tools like Docker, Kubernetes, Jenkins, and cloud platforms to support these goals.</p>
+    </div>
+    <script>
+        document.getElementById('colorPicker').addEventListener('input', function() {
+            document.getElementById('colorDiv').style.backgroundColor = this.value;
+        });
+
+        document.getElementById('fontSizePicker').addEventListener('input', function() {
+            document.getElementById('colorDiv').style.fontSize = this.value + 'px';
+        });
+    </script>
+</body>
+</html>
